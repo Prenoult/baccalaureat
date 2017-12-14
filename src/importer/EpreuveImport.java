@@ -36,7 +36,7 @@ public class EpreuveImport {
         boolean res = true;
         String sql = "";
         PreparedStatement ps = null;
-        sql = "INSERT into epreuve(code,libelle)"
+        sql = "INSERT into tabepreuves(code,libelle)"
                 + " VALUES(?,?)";
         try {
             ps = DBManager.CONNECTION.prepareStatement(sql);
