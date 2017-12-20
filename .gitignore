@@ -27,3 +27,6 @@ hs_err_pid*
 
 # MacOS #
 .DS_Store
+
+# Results #
+src/results/*
