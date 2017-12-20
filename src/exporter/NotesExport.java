@@ -15,9 +15,8 @@ public class NotesExport {
 
     private String filename;
 
-    public NotesExport(String filename) {
+    public NotesExport() {
         super();
-        this.filename = filename;
     }
 
     public boolean run(String serie, String groupe) throws SQLException, IOException {
@@ -57,14 +56,6 @@ public class NotesExport {
         return res;
     }
 
-    public String getFilename() {
-        return filename;
-    }
-
-    public void setFilename(String filename) {
-        this.filename = filename;
-    }
-
     public Logger getLog() {
         return this.LOG;
     }
@@ -72,7 +63,7 @@ public class NotesExport {
     //===========================================
     public static void main(String[] args) throws IOException, SQLException {
 
-        NotesExport el = new NotesExport("results.csv");
+        NotesExport el = new NotesExport();
 
         DBManager.URI = "jdbc:mysql://127.0.0.1:3306/baccalaureat";
         DBManager.USER = "root";
