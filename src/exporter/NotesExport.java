@@ -23,7 +23,7 @@ public class NotesExport {
     public boolean run(String serie, String groupe) throws SQLException, IOException {
         boolean res = true;
         DBManager.connect();
-        File ff = new File("src/results/result.csv");
+        File ff = new File("src/results/results.csv");
         String sql = "";
         PreparedStatement ps = null;
         sql = "SELECT id, code1, note FROM tabnotes INNER JOIN tabscandidats " +
@@ -72,7 +72,7 @@ public class NotesExport {
     //===========================================
     public static void main(String[] args) throws IOException, SQLException {
 
-        NotesExport el = new NotesExport("Result.csv");
+        NotesExport el = new NotesExport("results.csv");
 
         DBManager.URI = "jdbc:mysql://127.0.0.1:3306/baccalaureat";
         DBManager.USER = "root";
