@@ -63,8 +63,8 @@ public class PreciserImport {
             } else {
                 String code1 = item.get(0).trim();
                 String libelle1 = item.get(1).trim();
-                String code2 = item.get(0).trim();
-                String libelle2 = item.get(1).trim();
+                String code2 = item.get(2).trim();
+                String libelle2 = item.get(3).trim();
 
 
                 System.out.println(code1);
